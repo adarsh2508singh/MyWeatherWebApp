@@ -38,10 +38,10 @@
             </div>
             <div class="tempInformation">
                 <div class="top_layer">
-                    <p id="day">Wednesday</p>
+                    <p id="day"></p>
                     <p id="today_data">01 DEC</p>
                 </div>
-                <div class="main_layer ">
+                <div class="main_layer">
                     <p id="city_name">Get Output Here</p>
                     <div class="middle_layer data_hide">
                         <p id="temp"><span id="temp_real_val">0</span><sup>o</sup>C</p>
@@ -55,21 +55,20 @@
 {{>footer}}
   <script src="/js/main.js"></script>
 <script>
-    const getCurrentDay=()=>{
-let weekday= new Array(7);
-weekday[0]="Sunday";
-weekday[1] = "Monday";
-weekday[2] = "Tuesday";
-weekday[3]= "Wednesday";
-weekday[4] ="Thursday";
-weekday[5]="Friday";
-weekday[6] = "Saturday";
-let currentTime = new Date():
-days= weekday[currentTime.getDay()];
+   var today = new Date();  
+var days = today.getDay();  
+var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];  
 let day= document.getElementById('day');
-day.innerText=days
-getCurrentDay() ;
-    }
+day.innerHTML=daylist[days];
+
+const month = ["Jan","Feb","Mar","Apr","May","June","July","Aug","Sept","Oct","Nov","Dec"];
+
+const d = new Date();
+let name = month[d.getMonth()];
+let dayno = d.getDate();
+document.getElementById("today_data").innerHTML =dayno +'  ' + name;
+
 </script>
+
 </body>
 </html>

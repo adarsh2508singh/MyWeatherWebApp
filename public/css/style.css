@@ -108,7 +108,7 @@ body{
 .temp_form {
     width: 60%;
     position : relative;
-    margin: 8rem auto 6rem;
+    margin: 6rem auto 3rem;
 }
 
     .temp_form input[type="text"]{
@@ -134,7 +134,7 @@ body{
     padding: 0 3rem;
     border-radius : 3rem;
     color:white;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 .temp_form input[type="submit"]:hover{
     color: var(--main-color);
@@ -145,7 +145,7 @@ body{
 }
 /* temp details show here */
 .tempInformation{
-    width: 50rem;
+    width: 40rem;
     margin: auto;
     min-height: 20rem;
     background-color: #323544;
@@ -165,9 +165,9 @@ body{
 }
 .top_layer p{
     color: #fff;
-    font-weight: 300;
+    font-weight: 400;
     padding: 2rem;
-    font-size: 1.5rem; 
+    font-size: 1.4rem; 
 }
 .main_layer{
     width: 100%;
@@ -200,7 +200,7 @@ sup{
     margin-top: -2rem;
 }
 .data_hide{
-    visibility:visible;
+    visibility:hidden;
     transition: all 0.3s linear;
 }
 
@@ -227,5 +227,38 @@ footer p{
         height: auto;
         margin-top: 3rem;
     }
+     .temp_form{
+        height: auto;
+        width: 35%;
+        
+     }
+     .tempInformation{
+        width: 25rem;
+     }
+     .temp_form input[type="submit"] {
+ 
+        top: 2.5px;
+        right: 2.5px;
+        bottom: 2.5px;
     
+        padding: 0 1.2rem;
+        border-radius: 1.5rem;
+    
+        font-size: 1rem;
+    }
+    .temp_form input[type="text"] {
+        width: 100%;
+        padding: 1rem 2.5rem 1rem 1rem;
+    
+        font-size: 1rem;
+        border-radius: 1.5rem;
+    }
+     .main_layer .middle_layer p,
+     .main_layer .middle_layer .fa{
+        font-size: 3.5rem;
+     }
+     sup{
+        font-size: 3rem;
+     }
+      
 }
