@@ -34,7 +34,7 @@ if (tempMood==="Clear") {
     "<i class = ' fas fa-cloud-rain' style='color: #a4b0be;'></i>";
     } else {
     temp_status.innerHTML
-    "i clas= 'fas fa-sun' style= 'color : #eccc68;'></i>";
+    "<i clas= 'fas fa-sun' style= 'color : #eccc68;'></i>";
     }
     datahide.classList.remove('data_hide');
 
